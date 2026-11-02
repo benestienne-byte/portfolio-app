@@ -3,37 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Portfolio OS</title>
+
+  <!-- Meta PWA & Plein écran iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Portfolio OS">
-  <title>Portfolio OS</title>
+  <meta name="theme-color" content="#090d16">
+  <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- Déclaration des icônes pour Safari iOS et Chrome -->
-  <link rel="icon" type="image/png" href="icon.png">
-  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Icônes pour l'écran d'accueil iOS et le Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.png">
+  <link rel="icon" type="image/png" sizes="180x180" href="icon.png">
+  <link rel="shortcut icon" href="icon.png">
 
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
       width: 100%;
       height: 100%;
-      height: 100dvh;
       overflow: hidden;
       background-color: #090d16;
+      -webkit-tap-highlight-color: transparent;
     }
-    iframe {
-      border: 0;
+    #portfolio-frame {
       width: 100%;
       height: 100%;
+      height: 100dvh; /* Hauteur dynamique plein écran iOS Safari */
+      border: none;
       display: block;
     }
   </style>
 </head>
 <body>
   <iframe 
-    src="https://script.google.com/macros/s/AKfycbwjs7UeP1aBsHPsFXm-S2KCFjAhy4D43bPFTqekaTF12upd3zdTBsOg9FDw65nWbmwRFQ/exec" 
-    allow="clipboard-read; clipboard-write">
+    id="portfolio-frame" 
+    src="VOTRE_URL_GOOGLE_APPS_SCRIPT" 
+    allow="autoplay; fullscreen; clipboard-read; clipboard-write; encrypted-media" 
+    sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-modals">
   </iframe>
 </body>
 </html>
