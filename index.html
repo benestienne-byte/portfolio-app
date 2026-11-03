@@ -6,9 +6,12 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Portfolio OS">
+  
+  <!-- Force la couleur native de la barre d'état iOS (supprime le flou) -->
+  <meta name="theme-color" content="#050505">
+  
   <title>Portfolio OS</title>
 
-  <!-- Déclaration des icônes pour Safari iOS et Chrome -->
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
 
@@ -23,13 +26,14 @@
       height: 100%;
       height: 100dvh;
       overflow: hidden;
-      background-color: #050505; /* Noir très profond type Baggr */
+      background-color: #050505; 
     }
     iframe {
       border: 0;
       width: 100%;
       height: 100%;
       display: block;
+      background-color: #050505;
     }
   </style>
 </head>
